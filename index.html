@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
+    <title>-- Quiz --</title>
+  </head>
+
+  <body>
+
+    <nav class="navbar bg-dark border border-secondary">
+      <form class="container-fluid">
+        <h1 class="navbar-text fw-bold text-light">🥸🥸🥸 🔥Quizes🔥 🥸🥸🥸</h1>
+        <button class="btn btn-primary" type="submit" id="xxx">
+          Gestionar Quizes 🔴
+        </button>
+        <button class="btn btn-primary" type="submit" id="xx">
+          Listado de Quizes 🤫
+        </button>
+        <button class="btn btn-primary me-5" type="submit" id="xx">
+          Responder Quizes ☠️
+        </button>
+      </form>
+    </nav>
+
+      <form class="questionsForm d-grid mt-2 d-none" id="questions-form">
+        <div>
+          <input
+            class="questionText"
+            type="text"
+            id="questions"
+            placeholder="Pregunta..."
+            required
+          />
+        </div>
+        <div class="options">
+          <input
+            class="inputOption"
+            type="text"
+            id="option1"
+            placeholder="Opción 1"
+            required
+          />
+          <input
+            class="inputOption"
+            type="text"
+            id="option2"
+            placeholder="Opción 2"
+            required
+          />
+          <input
+            class="inputOption"
+            type="text"
+            id="option3"
+            placeholder="Opción 3"
+            required
+          />
+          <input
+            class="inputOption"
+            type="text"
+            id="option4"
+            placeholder="Opción 4"
+            required
+          />
+          <div class="col-sm-12 col-md-4">
+            <select
+              id="correct"
+              class="form-select mt-2"
+              aria-label="Default select example"
+              required
+            >
+              <option selected>Respuesta correcta</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-12 d-flex justify-content-center mt-2 gap-2">
+          <button class="btn btn-primary mx-3" type="submit" id="new-Btn">
+            Agregar
+          </button>
+          <button class="btn btn-danger mx-2" type="button" id="cancel-Btn">
+            Cancelar
+          </button>
+          <button class="btn btn-primary" type="button" id="edit-Btn">
+            Modificar
+          </button>
+        </div>
+      </form>
+
+      <div class="containerQuestions" id="container-Questions"></div>
+
+      <div class="col-12 border-bottom border-dark mt-4"></div>
+
+      <div class="col-12 d-flex justify-content-start m-4">
+        <button class="btn btn-primary" type="submit" id="add-Btn">
+          Agregar Pregunta ✍️
+        </button>
+        <button class="btn btn-primary mx-4" type="submit" id="">
+          Guardar Quiz 💽
+        </button>
+        <button class="btn btn-danger mx-2" type="button" id="">
+          Cancelar
+        </button>
+      </div>
+
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/755229d5b0.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
